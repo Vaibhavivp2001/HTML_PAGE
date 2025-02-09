@@ -1,0 +1,1117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Onest", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid black; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container .main-menu-bar{
+    height: 90px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container .main-menu-bar .logo{
+    /* border: 1px solid black; */
+    flex-basis: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .main-menu-bar .logo .image{
+    /* border: 1px solid black; */
+    flex-basis: 30%;
+}
+.container .main-menu-bar .logo .image img{
+    width: auto;
+    height: 3rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.container .main-menu-bar .logo .text{
+    /* border: 1px solid black; */
+    flex-basis: 60%;
+}
+.container .main-menu-bar .logo .text h1{
+    margin-top: 20px;
+    font-size: 2.2em;
+}
+.container .main-menu-bar .menu{
+    /* border: 1px solid black; */
+    flex-basis: 30%;
+}
+.container .main-menu-bar .menu ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .main-menu-bar .menu ul li{
+    list-style-type: none;
+    border-radius: 15px;
+}
+.container .main-menu-bar .menu ul li:hover{
+    background-color:rgb(218, 218, 218);
+    width: 20%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+    border-radius: 15px;
+}
+.container .main-menu-bar .menu ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight:600;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+.container .main-menu-bar .gap{
+    /* border: 1px solid black; */
+    flex-basis: 25%;
+}
+.container .main-menu-bar .btn{
+    /* border: 1px solid black; */
+    flex-basis: 15%;
+}
+.container .main-menu-bar .btn .btn1{
+    width: 70%;
+    height: 60%;
+    border-radius: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: black;
+    border: none;
+}
+.btn .btn1 h2{
+    font-weight:400;
+    color: white;
+}
+.container .main-menu-bar .btn .btn1:hover{
+    background-color: rgb(159, 206, 159);
+    color: black;
+    transform: scale(1.1);
+    transition: transform 100ms ease-in-out;
+}
+.slider{
+    width: 100%;
+    height: 150vh;
+    /* border: 1px solid black; */
+    background-image: url(../Images/Home.png);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slider .text1{
+    /* border: 1px solid black; */
+    height: 30px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.slider .text1 h2{
+    padding-left: 3rem;
+    color: white;
+    font-weight: 400;
+}
+.slider .line{
+    /* border: 1px solid black; */
+    height: 20px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.slider .line hr {
+    margin-left: 3rem;
+    height:2px;
+    border-width:0;
+    background-color:white;
+    margin-right: 3rem;
+  }
+.slider .text2{
+    /* border: 1px solid black; */
+    height: 70px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.slider .text2 h1{
+    margin-left: 3rem;
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
+}
+.slider .btn{
+    /* border: 1px solid white; */
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.slider .btn .gap{
+    /* border: 2px solid red; */
+    flex-basis: 70%;
+}
+.slider .btn .but{
+    /* border: 2px solid red; */
+    flex-basis: 15%;
+}
+.slider .btn .but .btn1{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(53, 29, 11);
+    border: none;
+    border-radius: 40px;
+}
+.slider .btn .but .btn1 h2{
+    color: white;
+    font-weight: 400;
+}
+.slider .btn .but .btn1:hover{
+    background-color: rgb(159, 206, 159);
+    color: black;
+    transform: scale(1.2);
+    transition: transform 100ms ease-in-out;
+}
+.text-slider{
+    width: 100%;
+    height: 140vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+.text-slider .text1{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 30px; 
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+ }
+ .text-slider .text1 h3{
+     font-weight: 500;
+     font-size: 1.4em;
+ }
+.text-slider .line{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 20px; 
+    margin-bottom: 2rem;
+}
+.text-slider .line hr{
+    margin-left: 3rem;
+    height: 2px;
+    border-width: 0px;
+    background-color: black;
+    margin-right: 3rem;
+}
+.text-slider .text2{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 180px; 
+    margin-bottom: 2rem;
+}
+.text-slider .text2 h1{
+    margin-left: 3rem;
+    font-size: 4.5em;
+    font-weight: 500;
+}
+.text-slider .text3{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 170px;
+    margin-bottom: 2rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.text-slider .text3 .gap{
+    /* border: 1px solid black; */
+    flex-basis: 43%;
+}
+.text-slider .text3 .para{
+    /* border: 1px solid black; */
+    flex-basis: 45%;
+}
+.text-slider .text3 .para p{
+    font-size: 1.5em;
+}
+.text-slider .btn{
+    /* border: 1px solid black; */
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.text-slider .btn .gap{
+    /* border: 2px solid red; */
+    flex-basis: 70%;
+}
+.text-slider .btn .but{
+    /* border: 2px solid red; */
+    flex-basis: 15%;
+}
+.text-slider .btn .but .btn1{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: none;
+    background-color:rgb(53, 29, 11);
+}
+.text-slider .btn .but .btn1:hover{
+    background-color: rgb(159, 206, 159);
+    color: black;
+    transform: scale(1.2);
+    transition: transform 100ms ease-in-out;
+}
+.image-slider{
+    width: 100%;
+    height: 210vh;
+    /* border: 1px solid black; */
+    background-image: url(../Images/home2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.image-slider .text1{
+    /* border: 1px solid white; */
+    height: 40px;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+.image-slider .text1 h3{
+    margin-left: 3rem;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.image-slider .line{
+    /* border: 1px solid white; */
+    height: 20px;
+    width: 100%;
+    margin-bottom: 25rem;
+}
+.image-slider .line hr{
+    margin-left: 3rem;
+    height: 2px;
+    border-width: 0px;
+    background-color: white;
+    margin-right: 3rem;
+}
+.image-slider .text2{
+    /* border: 1px solid white; */
+    height: 320px;
+    width: 100%;
+    margin-bottom: auto;
+    margin-bottom: 7rem;
+}
+.image-slider .text2 p{
+    color: white;
+    font-size: 5.5em;
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.image-slider .btn{
+    /* border: 1px solid black; */
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image-slider .btn .gap{
+    /* border: 2px solid red; */
+    flex-basis: 70%;
+}
+.image-slider .btn .but{
+    /* border: 2px solid red; */
+    flex-basis: 15%;
+}
+.image-slider .btn .but .btn1{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    border: none;
+    background-color:rgb(53, 29, 11);
+}
+.image-slider .btn .but .btn1:hover{
+    background-color: rgb(159, 206, 159);
+    color: black;
+    transform: scale(1.2);
+    transition: transform 100ms ease-in-out;
+}
+.div-container{
+    /* border: 1px solid black; */
+    height: 130vh;
+    width: 100%;
+    background-color: rgb(191, 214, 191);
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+}
+.div-container .features{
+    /* border: 1px solid black; */
+    height: 40px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.div-container .features h3{
+    margin-left: 3rem;
+    color: black;
+    font-size: 2em;
+    font-weight: 500;
+}
+.div-container .construction{
+    /* border: 1px solid black; */
+    height: 160px;
+    width: 100%;
+}
+.div-container .construction .d1{
+    width: 93%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+.div-container .construction .d1 h1{
+    font-weight: 300;
+    font-size: 7em;
+}
+/* .div-container .construction .dot1{
+    border: 1px solid black;
+
+} */
+.div-container .building{
+    /* border: 1px solid black; */
+    height: 160px;
+    width: 100%;
+}
+.div-container .building .d2{
+    width: 93%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+.div-container .building .d2 h1{
+    font-weight: 300;
+    font-size: 7em;
+}
+.div-container .repair{
+    /* border: 1px solid black; */
+    height: 160px;
+    width: 100%;
+}
+.div-container .repair .d3{
+    width: 93%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+.div-container .repair .d3 h1{
+    font-weight: 300;
+    font-size: 7em;
+}
+.content{
+    /* border: 1px solid black; */
+    width: 100%;
+    min-height: 400vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+.content .name{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+.content .name h3{
+    margin-left: 3rem;
+    color: black;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.content hr{
+    margin-left: 3rem;
+    height: 1px;
+    border-width: 0px;
+    background-color: black;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+.content .text{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 110vh;
+    margin-bottom: 1.4rem;
+}
+.content .text p{
+    font-size: 4.6em;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.content .image1{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 1.4rem;
+    display: flex;
+    flex-direction: row;
+}
+.content .text1{
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+    padding-left: 3rem;
+    padding-top: 4rem;
+}
+.content .text1 .dot1{
+    /* border: 1px solid black; */
+    width: 3%;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    float: left;
+    margin-top: 1rem;
+}
+.content .text1 h1{
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-left: 6rem;
+}
+.content .text1 p{
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 6rem;
+}
+.content .img1{
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+}
+.content .img1 img{
+    margin-top: 4rem;
+    width: 93%;
+    height: 70%;
+    margin-left: 1rem;
+}
+.content .image2{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 1.4rem;
+    display: flex;
+    flex-direction: row;
+}
+.content .text2{
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+    padding-left: 3rem;
+    padding-top: 4rem;
+}
+.content .text2 .dot2{
+    /* border: 1px solid black; */
+    width: 3%;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    float: left;
+    margin-top: 1rem;
+}
+.content .text2 h1{
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-left: 6rem;
+}
+.content .text2 p{
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 6rem;
+}
+.content .img2{
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+}
+.content .img2 img{
+    margin-top: 4rem;
+    width: 93%;
+    height: 70%;
+    margin-left: 1rem;
+}
+.content .image3{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 90vh;
+    margin-bottom:2rem;
+    display: flex;
+    flex-direction: row;
+}
+.content .text3{
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+    padding-left: 3rem;
+    padding-top: 4rem;
+}
+.content .text3 .dot3{
+    /* border: 1px solid black; */
+    width: 3%;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    float: left;
+    margin-top: 1rem;
+}
+.content .text3 h1{
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-left: 6rem;
+}
+.content .text3 p{
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 6rem;
+}
+.content .img3{
+    /* border: 1px solid black; */
+    flex-basis: 50%;
+}
+.content .img3 img{
+    margin-top: 4rem;
+    width: 93%;
+    height: 70%;
+    margin-left: 1rem;
+}
+.shaded-text{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 135vh;
+    background-color: rgb(44, 30, 20);
+}
+.shaded-text .text{
+    /* border: 1px solid white; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 10rem;
+    width: 93%;
+    height: 70vh;
+    margin-bottom: 7rem;
+}
+.shaded-text .text p{
+    font-size: 5em;
+    color: white;
+    font-weight: 400;
+}
+.shaded-text hr{
+    margin-left: 3rem;
+    height: 1px;
+    border-width: 0px;
+    background-color: white;
+    margin-right: 3rem;
+    /* margin-bottom: 2rem; */
+}
+.image-div{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 140vh;
+}
+.image-div .text{
+    width: 100%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.image-div .text h2{
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.image-div .text .left hr{
+    height: 1px;
+    border-width: 0px;
+    background-color: black;
+    margin-right: 2rem;
+}
+.image-div .text .left{
+    /* border: 1px solid black; */
+    flex-basis: 30%;
+}
+.image-div .text .right{
+    /* border: 1px solid black; */
+    flex-basis: 70%;
+}
+.image-div .text .right hr{
+    height: 1px;
+    border-width: 0px;
+    background-color: black;
+}
+.image-div .images{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+}
+.image-div .images .pic1{
+    flex-basis: 48%;
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+.image-div .images .pic1 img{
+    width: 100%;
+    height: 100%;
+}
+.image-div .images .pic1 h1{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.image-div .images .pic1 h2{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.image-div .images .pic2{
+    flex-basis: 23%;
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid black; */
+}
+.image-div .images .pic2 h1{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.image-div .images .pic2 h2{
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-top: 0.7rem;
+}
+.image-div .images .pic2 img{
+    width: 100%;
+    height: 100%;
+}
+.image-div .images .pic3{
+    flex-basis: 23%;
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid black; */
+}
+.image-div .images .pic3 img{
+    width: 100%;
+    height: 100%;
+}
+.image-div .images .pic3 h1{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+.image-div .images .pic3 h2{
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-top: 0.7rem;
+}
+.contacts{
+    width: 100%;
+    height: 110vh;
+    /* border: 1px solid black; */
+    background-color: rgb(44, 30, 20);
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.contacts .text h1{
+    color: white;
+    font-weight: 400;
+    font-size: 4.5em;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+.contacts .box{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 45vh;
+    margin-top: 3rem;
+}
+.contacts .box .div1{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100%;
+}
+.contacts .box .div1 .dot{
+    float: left;
+    /* border: 1px solid black; */
+    width: 6%;
+    height: 25px;
+    background-color:rgb(159, 206, 159);
+    border-radius: 50%;
+    margin-top: 2px;
+    border: none;
+}
+.contacts .box .div1 .text h2{
+    float: right;
+    margin-right: 17rem;
+    color: rgb(159, 206, 159);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.contacts .box .div1 h1{
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.contacts .box .div1 .btn1{
+    /* border: 1px solid black; */
+    height: 65px;
+    width: 40%;
+    border-radius: 25px;
+    margin-left: 3rem;
+}
+.contacts .box .div1 .btn1 .btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: rgb(159, 206, 159);
+    border: none;
+    font-size: 1.4em;
+}
+.contacts .box .div1 .btn1 .btn:hover{
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.2s;
+}
+.contacts .box .div2{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100%;
+}
+.contacts .box .div2 .dot{
+    float: left;
+    /* border: 1px solid black; */
+    width: 6%;
+    height: 25px;
+    background-color:rgb(159, 206, 159);
+    border-radius: 50%;
+    margin-top: 2px;
+    border: none;
+}
+.contacts .box .div2 .text h2{
+    float: right;
+    margin-right: 17rem;
+    color: rgb(159, 206, 159);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.contacts .box .div2 h1{
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.contacts .box .div2 .btn1{
+    /* border: 1px solid black; */
+    height: 65px;
+    width: 45%;
+    border-radius: 25px;
+    margin-left: 3rem;
+}
+.contacts .box .div2 .btn1 .btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: rgb(159, 206, 159);
+    border: none;
+    font-size: 1.4em;
+}
+.contacts .box .div2 .btn1 .btn:hover{
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.2s;
+}
+.contacts .box .div3{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100%;
+}
+.contacts .box .div3 .dot{
+    float: left;
+    /* border: 1px solid black; */
+    width: 6%;
+    height: 25px;
+    background-color:rgb(159, 206, 159);
+    border-radius: 50%;
+    margin-top: 2px;
+    border: none;
+}
+.contacts .box .div3 .text h2{
+    float: right;
+    margin-right: 17rem;
+    color: rgb(159, 206, 159);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.contacts .box .div3 h1{
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.contacts .box .div3 .btn1{
+    /* border: 1px solid black; */
+    height: 65px;
+    width: 30%;
+    border-radius: 25px;
+    margin-left: 3rem;
+}
+.contacts .box .div3 .btn1 .btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: rgb(159, 206, 159);
+    border: none;
+    font-size: 1.4em;
+}
+.contacts .box .div3 .btn1 .btn:hover{
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.2s;
+}
+.subscribe{
+    width: 100%;
+    height: 130vh;
+    /* border: 1px solid black; */
+    background-color: rgb(44, 30, 20);
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.subscribe .box{
+    width: 100%;
+    height: 90vh;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+}
+.subscribe .box .div1{
+    /* border: 1px solid white; */
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.subscribe .box .div1 .text h1{
+    font-weight: 400;
+    font-size: 5em;
+    color: white;
+    margin-bottom: 3rem;
+}
+.subscribe .box .div1 .search{
+    border: 1px solid white;
+    width: 100%;
+    height: 80px;
+    border-radius: 30px;
+    display: flex;
+    /* overflow: hidden; */
+    background-color: white;
+}
+.subscribe .box .div1 .search input[type="text"]{
+    width: 100%;
+    height: 100%;
+    flex-basis: 70%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+.subscribe .box .div1 .search #btn{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 206, 159);
+    font-size: 1em;
+    font-weight: 300;
+    flex-basis: 30%;
+    border-radius: 30px;
+    border: none;
+}
+.subscribe .box .div1 .nav-bar{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 60px;
+    margin-top: 13rem;
+}
+.subscribe .box .div1 .nav-bar ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.subscribe .box .div1 .nav-bar ul li{
+    list-style-type: none;
+    padding: 1em;
+}
+.subscribe .box .div1 .nav-bar ul a{
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+}
+.subscribe .box .div1 .nav-bar ul a:hover{
+    text-decoration:underline;
+    transition: 0.9s;
+}
+.subscribe .box .div2{
+    /* border: 1px solid white; */
+    flex-basis: 40%;
+}
+.subscribe .box .div2 .text h1{
+    font-weight: 400;
+    font-size: 5em;
+    color: white;
+    margin-bottom: 3rem;
+}
+.subscribe .box .div2 .nav-bar{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around */
+}
+.subscribe .box .div2 .nav-bar .face{
+    /* border: 1px solid white; */
+    flex-basis: 16%;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+.subscribe .box .div2 .nav-bar .face .btn1{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgb(159, 206, 159) ;
+    border: none;
+}
+.subscribe .box .div2 .nav-bar .face .btn1:hover{
+    transform: scale(1.1);
+    background-color: white;
+    transition: transform ease-in-out 0.2s;
+}
+.subscribe .box .div2 .nav-bar .face .btn1 img{
+    width: 40%;
+    height: 40%;
+}
+.subscribe .box .div2 .nav-bar .twit{
+    /* border: 1px solid white; */
+    flex-basis: 16%;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+.subscribe .box .div2 .nav-bar .twit .btn2{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgb(159, 206, 159) ;
+    border: none;
+}
+.subscribe .box .div2 .nav-bar .twit .btn2:hover{
+    transform: scale(1.1);
+    background-color: white;
+    transition: transform ease-in-out 0.2s;
+}
+.subscribe .box .div2 .nav-bar .twit .btn2 img{
+    width: 40%;
+    height: 40%;
+}
+.subscribe .box .div2 .nav-bar .insta{
+    /* border: 1px solid white; */
+    flex-basis: 16%;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+.subscribe .box .div2 .nav-bar .insta .btn3{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgb(159, 206, 159) ;
+    border: none;
+}
+.subscribe .box .div2 .nav-bar .insta .btn3:hover{
+    transform: scale(1.1);
+    background-color: white;
+    transition: transform ease-in-out 0.2s;
+}
+.subscribe .box .div2 .nav-bar .insta .btn3 img{
+    width: 40%;
+    height: 40%;
+}
+.subscribe .box .div2 .nav-bar .link{
+    /* border: 1px solid white; */
+    flex-basis: 16%;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+.subscribe .box .div2 .nav-bar .link .btn4{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgb(159, 206, 159) ;
+    border: none;
+}
+.subscribe .box .div2 .nav-bar .link .btn4:hover{
+    transform: scale(1.1);
+    background-color: white;
+    transition: transform ease-in-out 0.2s;
+}
+.subscribe .box .div2 .nav-bar .link .btn4 img{
+    width: 40%;
+    height: 40%;
+}
+.subscribe .box .div2 .logo{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 60px;
+    margin-top: 13rem;
+    display: flex;
+    flex-direction: row;
+}
+.subscribe .box .div2 .logo .gap{
+    flex-basis: 90%;
+}
+.subscribe .box .div2 .logo .image{
+    flex-basis: 10%;
+}
+.subscribe .box .div2 .logo .image img{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
